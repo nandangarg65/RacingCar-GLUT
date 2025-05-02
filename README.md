@@ -12,9 +12,7 @@
 - [💻 System Requirements](#-system-requirements)
 - [🔧 How to Run](#-how-to-run)
 - [🧩 Implementation](#-implementation)
-- [📸 Screenshots](#-screenshots)
-- [📚 Learnings](#-learnings)
-- [📄 License](#-license)
+  
 
 ---
 
@@ -60,9 +58,9 @@
 The game logic is implemented using a combination of OpenGL/GLUT functions and custom user-defined functions to handle rendering, input, and game logic.
 
 ### 🔧 Core OpenGL & GLUT Functions Used
--glClear() – Clears the screen buffer before rendering new frames.
--glColor3f() – Sets the color for drawing elements.
--glBegin() / glEnd() – Used for drawing shapes (cars, dividers, road).
+- glClear() – Clears the screen buffer before rendering new frames.
+- glColor3f() – Sets the color for drawing elements.
+- glBegin() / glEnd() – Used for drawing shapes (cars, dividers, road).
 -glVertex2f() – Specifies the coordinates for vertices of shapes.
 -glFlush() – Ensures all OpenGL commands are executed.
 -glutSwapBuffers() – Used for double buffering to display the rendered frame.
@@ -82,7 +80,7 @@ glutDisplayFunc() – Registers the display callback for rendering frames.
 -exit() – Terminates the program.
 
 ### 🧠 User-Defined Functions
--display() – Clears the screen and displays either the welcome screen or the main game screen.
+- display() – Clears the screen and displays either the welcome screen or the main game screen.
 -spe_key() – Handles arrow key inputs for controlling the player’s car and speed.
 -processKeys() – Handles standard key inputs like Space and Esc.
 -timer() – Controls frame updates and animation timing using a timer callback.
