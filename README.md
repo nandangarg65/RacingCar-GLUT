@@ -10,8 +10,9 @@
 - [🎯 Objective](#-objective)
 - [✨ Key Features](#-key-features)
 - [💻 System Requirements](#-system-requirements)
-- [🔧 How to Run](#-how-to-run)
 - [🧩 Implementation](#-implementation)
+- [ 🏁 Conclusion](#-conclusion)
+  
   
 
 ---
@@ -61,38 +62,43 @@ The game logic is implemented using a combination of OpenGL/GLUT functions and c
 - glClear() – Clears the screen buffer before rendering new frames.
 - glColor3f() – Sets the color for drawing elements.
 - glBegin() / glEnd() – Used for drawing shapes (cars, dividers, road).
--glVertex2f() – Specifies the coordinates for vertices of shapes.
--glFlush() – Ensures all OpenGL commands are executed.
--glutSwapBuffers() – Used for double buffering to display the rendered frame.
--glutKeyboardFunc() – Handles standard key inputs.
--glutSpecialFunc() – Handles special keys like arrow keys.
--glutTimerFunc() – Sets a timer to call the game loop for continuous updating.
--glOrtho() – Sets up a 2D orthographic viewing region for rendering.
--glutMainLoop() – Starts the GLUT event-processing loop.
--glutInit() – Initializes the GLUT library.
--glutInitDisplayMode() – Sets the initial display mode (e.g., RGB and double buffer).
--glutInitWindowSize() – Specifies the initial width and height of the window.
--glutInitWindowPosition() – Sets the window’s initial position on the screen.
--glutCreateWindow() – Creates a window with the specified title.
-glutDisplayFunc() – Registers the display callback for rendering frames.
--glutPostRedisplay() – Marks the current window as needing to be redrawn.
--glClearColor() – Sets the background color of the display window.
--exit() – Terminates the program.
+- glVertex2f() – Specifies the coordinates for vertices of shapes.
+- glFlush() – Ensures all OpenGL commands are executed.
+- glutSwapBuffers() – Used for double buffering to display the rendered frame.
+- glutKeyboardFunc() – Handles standard key inputs.
+- glutSpecialFunc() – Handles special keys like arrow keys.
+- glutTimerFunc() – Sets a timer to call the game loop for continuous updating.
+- glOrtho() – Sets up a 2D orthographic viewing region for rendering.
+- glutMainLoop() – Starts the GLUT event-processing loop.
+- glutInit() – Initializes the GLUT library.
+- glutInitDisplayMode() – Sets the initial display mode (e.g., RGB and double buffer).
+- glutInitWindowSize() – Specifies the initial width and height of the window.
+- glutInitWindowPosition() – Sets the window’s initial position on the screen.
+- glutCreateWindow() – Creates a window with the specified title.
+- glutDisplayFunc() – Registers the display callback for rendering frames.
+- glutPostRedisplay() – Marks the current window as needing to be redrawn.
+- glClearColor() – Sets the background color of the display window.
+- exit() – Terminates the program.
 
 ### 🧠 User-Defined Functions
 - display() – Clears the screen and displays either the welcome screen or the main game screen.
--spe_key() – Handles arrow key inputs for controlling the player’s car and speed.
--processKeys() – Handles standard key inputs like Space and Esc.
--timer() – Controls frame updates and animation timing using a timer callback.
--fristDesign() – Displays the welcome screen with title and instructions.
+- spe_key() – Handles arrow key inputs for controlling the player’s car and speed.
+- processKeys() – Handles standard key inputs like Space and Esc.
+- timer() – Controls frame updates and animation timing using a timer callback.
+- fristDesign() – Displays the welcome screen with title and instructions.
 -startGame() – Main game loop that handles all rendering and updates.
--drawRoad() – Draws the background road and borders.
--drawDivider() – Animates dashed lines in the center of the road.
--drawCar() – Renders the player’s car.
--drawOtherCars() – Renders enemy cars and handles their motion.
--collided() – Detects collisions between the player’s car and enemy cars.
--updateScoreAndLevel() – Increments the score and increases game difficulty over time.
--gameOver() – Displays the game over screen and final score.
--drawText() – Renders text at specific screen positions.
+- drawRoad() – Draws the background road and borders.
+- drawDivider() – Animates dashed lines in the center of the road.
+- drawCar() – Renders the player’s car.
+- drawOtherCars() – Renders enemy cars and handles their motion.
+- collided() – Detects collisions between the player’s car and enemy cars.
+- updateScoreAndLevel() – Increments the score and increases game difficulty over time.
+- gameOver() – Displays the game over screen and final score.
+- drawText() – Renders text at specific screen positions.
+
+---
+
+### 🏁 Conclusion
+Rage on the Road serves as an excellent introduction to OpenGL and game development using C++. It provides a hands-on experience with rendering techniques, input handling, and animation in a 2D game environment. The game incorporates essential gameplay elements such as collision detection, score tracking, and difficulty scaling, providing a solid foundation for expanding the project into more complex games. The skills learned here can easily be transferred to other graphical and interactive applications, making it an ideal project for budding game developers and computer graphics enthusiasts.
 
 ---
